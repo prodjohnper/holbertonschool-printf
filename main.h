@@ -8,7 +8,7 @@ int _printf(const char *format, ...);
 int char_prnt(char c);
 int str_prnt(char *s);
 int int_prnt(int num);
-int def_prnt(char c);
+void def_prnt();
 int _strlen(char *s);
 int _putchar(char c);
 
