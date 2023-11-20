@@ -20,12 +20,9 @@ int str_prnt(char *s)
 
 	else if (s == NULL)
 	{
-		write(1, "(null)", 6);
-		return (6);
-	}
+		write(1, "(null)", _strlen("(null)"));
 
-	else
-	{
-		return (0);
+		return (_strlen("(null)"));
 	}
+	return (0);
 }
