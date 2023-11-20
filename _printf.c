@@ -29,8 +29,8 @@ int _printf(const char *format, ...)
 						int_prnt(va_arg(args, int));
 					break;
 				default:
-					count += def_prnt(format[i]);
-					i++;
+					def_prnt();
+					count++;
 					break;
 			}
 		}
