@@ -6,15 +6,17 @@
  *
  * @s: Takes char as argument.
  *
- * Return: 1 success 0 otherwise.
+ * Return: Length of string, 1 success 0 otherwise.
  */
 
 int _strlen(char *s)
 {
-	int index;
+	int index = 0;
 
-	for (index = 0; s[index] != '\0'; index++)
-		;
-
+	while (*s != '\0')
+	{
+		index++;
+		s++;
+	}
 	return (index);
 }
