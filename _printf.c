@@ -15,21 +15,21 @@ int _printf(const char *format, ...)
 
         while (*format) {
                 if (*format != '%') {
-                        count += char_prnt(*format);
+                        count += prnt_c(*format);
                 } else {
                         format++;
                         if (*format == '\0') {
-                                str_prnt("(null)");
+                                prnt_str("(null)");
                                 count += _strlen("(null)");
                         } else if (*format == 's') {
-                                 count += str_prnt (va_arg(args, char *));
+                                 count += prnt_str (va_arg(args, char *));
 			}
 				if (*format == 'c') {
-                                	count += char_prnt(va_arg(args, int));
+                                	count += prnt_c(va_arg(args, int));
                         } else if (*format == 'd' || *format == 'i') {
                                 count += prnt_d (va_arg(args, int));
                         } else if (*format == '%') {
-                                count += char_prnt('%');
+                                count += prnt_c('%');
                         }
                 }
                 format++;
