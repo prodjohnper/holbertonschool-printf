@@ -9,14 +9,13 @@
  * Return: Length of string, 1 success 0 otherwise.
  */
 
-int _strlen(char *s)
+int _strlen(const char *str)
 {
-	int index = 0;
+	int len = 0;
 
-	while (*s != '\0')
+	while (str[len] != '\0')
 	{
-		index++;
-		s++;
+		len++;
 	}
-	return (index);
+	return (len);
 }
