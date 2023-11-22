@@ -5,11 +5,10 @@
 #include <stdarg.h>
 
 int _printf(const char *format, ...);
-int char_prnt(char c);
-int str_prnt(char *s);
-int int_prnt(int num);
-void def_prnt();
-int _strlen(char *s);
+int prnt_c(char c);
+int prnt_str(const char *str);
+int prnt_d(int num);
+int _strlen(const char *str);
 int _putchar(char c);
 
 #endif /* MAIN_H */
