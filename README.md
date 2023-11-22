@@ -16,13 +16,13 @@ This is my `printf` project for *Holberton Coding School*. The task for this pro
 
 ## Files
 
-- README.md - File that contains project description.
-- main.h - Header file containing function prototypes.
-- _printf.c - File containing the _printf function, which produces an output according to a format.
-- prnt_c.c - File with function that prints *character* cases.
-- prnt_d.c - File with function that prints *integer* cases.
-- prnt_str.c - File with function that prints *string* cases.
-- man_3_printf.c - File that contains function manual.
+- `README.md` - File that contains project description.
+- `main.h` - Header file containing function prototypes.
+- `_printf.c` - File containing the _printf function, which produces an output according to a format.
+- `prnt_c.c` - File with function that prints *character* cases.
+- `prnt_d.c` - File with function that prints *integer* cases.
+- `prnt_str.c` - File with function that prints *string* cases.
+- `man_3_printf.c` - File that contains function manual.
 
 *`Main.c` file <ins>not</ins> included.*
 
@@ -56,6 +56,7 @@ Then, call the function including the desired format specifier and any additiona
 
 ```c
 int age = 10;
+
     _printf("%d\n", age);
 ```
 
