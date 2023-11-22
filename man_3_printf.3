@@ -1,0 +1,41 @@
+.\" Manpage for _printf.
+
+.TH man 3 "November 2023" "1.0" "user manual"
+
+.SH NAME
+
+_printf \- a version of the printf function
+
+.SH SYNOPSIS
+
+#include "main.h"
+
+int _printf(const char *format, ...);
+
+_printf("Hello, user");
+_printf("Hello, &s", "user");
+
+.SH DESCRIPTION
+
+The \fB_printf()\fR function prints arguments under the parameters of the format specifiers given. It takes the mandatory argument FORMAT and optionally, a series of arguments.
+
+.SH FORMAT SPECIFIERS
+
+Character used to specify the type of format specifier to be applied.
+The format specifiers and their meanings are:
+%d, %i - Decimal or signed integer
+%c - Signed character
+%s - String or sequence of characters
+
+.SH SEE ALSO
+
+\fBprintf(3), fprintf(3), sprintf(3), vprintf(3).\fR
+
+.SH BUGS
+
+No known bugs
+
+.SH AUTHOR
+
+Jonathan Perez
+7377@holbertonstudents@gmail.com
