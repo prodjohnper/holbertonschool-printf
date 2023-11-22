@@ -10,6 +10,13 @@
 
 int prnt_c(const char c)
 {
-	write(1, &c, 1);
-	return (1);
+	if (c != '\0')
+	{
+		write(1, &c, 1);
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
