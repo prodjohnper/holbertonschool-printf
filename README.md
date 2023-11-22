@@ -80,4 +80,4 @@ int main()
 
 ## Credits
 
-*[Jonathan Pérez](https://github.com/prodjohnper)*
+- *[Jonathan Pérez](https://github.com/prodjohnper)*
