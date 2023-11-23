@@ -13,6 +13,11 @@ int prnt_d(int num)
 	char buffer[20];
 	int i = 0, j;
 
+	if (num == '\0')
+	{
+		write(1, "0", 1);
+		return (1);
+	}
 	if (num == 0)
 	{
 		write(1, "0", 1);
