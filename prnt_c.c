@@ -8,8 +8,15 @@
  * Return: 0 success or length of char.
  */
 
-int prnt_c(const char c)
+int prnt_c(int c)
 {
-	write(1, &c, 1);
-	return (1);
+	if (c == '\0')
+	{
+		return (-1);
+	}
+	else
+	{
+		write(1, &c, 1);
+		return (1);
+	}
 }
