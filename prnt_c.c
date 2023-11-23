@@ -10,13 +10,6 @@
 
 int prnt_c(int c)
 {
-	if (c == '\0')
-	{
-		return (-1);
-	}
-	else
-	{
-		write(1, &c, 1);
-		return (1);
-	}
+	write(1, &c, 1);
+	return (1);
 }
